@@ -24,14 +24,15 @@ A classic Snake Game implemented in Python using the Pygame library. This game i
    git clone https://github.com/yourusername/snake-game.git  
    ```
 
-Navigate to the project directory:
+4. Navigate to the project directory:
+   ```bash
+   cd snake-game
+   ```
 
-cd snake-game
-
-Run the game:
-
-python snake_game.py
-
+5. Run the game:
+   ```bash
+   python snake_game.py
+   ```
 How to Play
 
 Use the arrow keys to move the snake.

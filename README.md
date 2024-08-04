@@ -17,7 +17,7 @@ A classic Snake Game implemented in Python using the Pygame library. This game i
    ```bash
    pip install pygame 
    ```
-   Install Pygame using pip for MACos:
+Install Pygame using pip for MACos:
    ```bash
    pip3 install pygame 
    ```
@@ -25,7 +25,7 @@ A classic Snake Game implemented in Python using the Pygame library. This game i
 3. Clone this repository:
 
    ```bash 
-   git clone https://github.com/M1925myk/Snake_Game  
+   git clone https://github.com/M1925myk/Snake_Game/tree/main  
    ```
 
 4. Navigate to the project directory:
@@ -37,7 +37,7 @@ A classic Snake Game implemented in Python using the Pygame library. This game i
    ```bash
    python snake_game.py
    ```
-   Run the game for MACos:
+Run the game for MACos:
    ```bash
       python snake_game.py
    ```

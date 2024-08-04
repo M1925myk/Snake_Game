@@ -1,4 +1,3 @@
-# Snake Game
 
 A classic Snake Game implemented in Python using the Pygame library. This game includes features like scoring, a main menu, and game over states.
 

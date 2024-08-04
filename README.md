@@ -17,6 +17,10 @@ A classic Snake Game implemented in Python using the Pygame library. This game i
    ```bash
    pip install pygame 
    ```
+   Install Pygame using pip for MACos:
+   ```bash
+   pip3 install pygame 
+   ```
 
 3. Clone this repository:
 
@@ -32,6 +36,10 @@ A classic Snake Game implemented in Python using the Pygame library. This game i
 5. Run the game:
    ```bash
    python snake_game.py
+   ```
+   Run the game for MACos:
+   ```bash
+      python snake_game.py
    ```
 How to Play
 

@@ -97,9 +97,7 @@ def gameLoop():
         s_y += s_y_change
         screen.fill(blue)
         pygame.draw.rect(screen, green, [foodx, foody, snake_block, snake_block])
-        snake_Head = []
-        snake_Head.append(s_x)
-        snake_Head.append(s_y)
+        snake_Head = [s_x, s_y]
         snake_List.append(snake_Head)
         if len(snake_List) > Length_of_snake:
             del snake_List[0]

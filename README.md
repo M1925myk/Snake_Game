@@ -30,7 +30,9 @@
    
 - If you have done everything correctly you will see a window with the game.
 
-![](image/main_window.png)
+
+- ![](image/main_window.png)
+
 
 ## How to Play
 Use the arrow keys to move the snake.

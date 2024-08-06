@@ -25,18 +25,18 @@ snake_speed = 15
 clock = pygame.time.Clock()
 
 # Fonts
-font_style = pygame.font.SysFont("bahnschrift", 25)
+font_style = pygame.font.SysFont("comicsansms", 30)
 score_font = pygame.font.SysFont("comicsansms", 35)
 
 
 def display_score(score):
-    value = score_font.render("Your Score: " + str(score), True, black)
+    value = score_font.render("Your Score: " + str(score), True, 'black')
     screen.blit(value, [0, 0])
 
 
 def display_snake(snake_block, snake_body):
     for x in snake_body:
-        pygame.draw.rect(screen, black, [x[0], x[1], snake_block, snake_block])
+        pygame.draw.rect(screen, 'yellow', [x[0], x[1], snake_block, snake_block])
 
 
 def display_message(msg, color, pos):
@@ -64,8 +64,8 @@ def run_game_loop():
     while not game_over:
 
         while game_close == True:
-            screen.fill(blue)
-            display_message("You Lost! Press SPACE-Play Again or Q-Quit", red, [screen_width / 6, screen_height / 3])
+            screen.fill('gray')
+            display_message("You Lost! Press SPACE-Play Again or Q-Quit", 'red', [100, 300])
             display_score(length_of_snake - 1)
             pygame.display.update()
 
@@ -98,8 +98,8 @@ def run_game_loop():
             game_close = True
         s_x += s_x_change
         s_y += s_y_change
-        screen.fill(blue)
-        pygame.draw.rect(screen, green, [foodx, foody, snake_block, snake_block])
+        screen.fill('gray')
+        pygame.draw.rect(screen, 'red', [foodx, foody, snake_block, snake_block])
         snake_head = [s_x, s_y]
         snake_body.append(snake_head)
         if len(snake_body) > length_of_snake:
@@ -126,9 +126,9 @@ def run_game_loop():
 def run_game():
     menu = True
     while menu:
-        screen.fill(blue)
-        display_message("Welcome to Snake Game", green, [screen_width / 6, screen_height / 3])
-        display_message("Press P to Play or Q to Quit", black, [screen_width / 6, screen_height / 2])
+        screen.fill('gray')
+        display_message("Welcome to Snake Game", 'black', [screen_width / 6, screen_height / 3])
+        display_message("Press P to Play or Q to Quit", 'black', [screen_width / 6, screen_height / 2])
         pygame.display.update()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

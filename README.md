@@ -13,7 +13,9 @@
    ```
 
 3. Clone this repository:
+
 - Go to the `< > Code` and copy the clone that you want.
+
 ![](image/code.png)
 
 4. Navigate to the project directory:

@@ -75,7 +75,7 @@ def run_game_loop():
                         game_over = True
                         game_close = False
                     if event.key == pygame.K_SPACE:
-                        gameLoop()
+                        run_game_loop()
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -135,7 +135,7 @@ def run_game():
                 menu = False
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_p:
-                    gameLoop()
+                    run_game_loop()
                 if event.key == pygame.K_q:
                     menu = False
 
@@ -143,4 +143,4 @@ def run_game():
     quit()
 
 
-main_menu()
+run_game()

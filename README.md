@@ -29,6 +29,7 @@
    ```
    
 - If you have done everything correctly you will see a window with the game.
+
 ![](image/main_window.png)
 
 ## How to Play

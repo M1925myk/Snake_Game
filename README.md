@@ -1,12 +1,7 @@
 
-A classic Snake Game implemented in Python using the Pygame library. This game includes features like scoring, a main menu, and game over states.
+## A classic Snake Game implemented in Python using the Pygame library. This game includes features like scoring, a main menu, and game over states.
 
-## Features
-
-- Classic snake gameplay
-- Score tracking
-- Main menu
-- Game over screen with options to play again or quit
+## The code will work if you have Python 3 or higher installed
 
 ## Installation
 
@@ -16,32 +11,25 @@ A classic Snake Game implemented in Python using the Pygame library. This game i
    ```bash
    pip install pygame 
    ```
-Install Pygame using pip for MACos:
-   ```bash
-   pip3 install pygame 
-   ```
 
 3. Clone this repository:
-
-   ```bash 
-   git clone https://github.com/M1925myk/Snake_Game/tree/main  
-   ```
+- Go to the `< > Code` and copy the clone that you want.
+![](image/code.png)
 
 4. Navigate to the project directory:
    ```bash
-   cd snake-game
+   cd snake_game
    ```
 
 5. Run the game:
    ```bash
    python snake_game.py
    ```
-Run the game for MACos:
-   ```bash
-      python3 snake_game.py
-   ```
-How to Play
+   
+- If you have done everything correctly you will see a window with the game.
+![](image/main_window.png)
 
+## How to Play
 Use the arrow keys to move the snake.
 Eat the green food blocks to grow the snake and increase your score.
 Avoid colliding with the walls or the snake's own body.
@@ -49,3 +37,4 @@ Avoid colliding with the walls or the snake's own body.
 Code Overview
 
 snake_game.py: The main game file containing all the logic for the Snake Game.
+ 

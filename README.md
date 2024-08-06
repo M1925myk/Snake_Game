@@ -14,7 +14,7 @@
 
 3. Clone this repository:
 
-- Go to the `< > Code` and copy the clone that you want.
+- Go to the `< > Code` and copy the clone that you need.
 
 4. Navigate to the project directory:
    ```bash

@@ -38,17 +38,13 @@ Install Pygame using pip for MACos:
    ```
 Run the game for MACos:
    ```bash
-      python snake_game.py
+      python3 snake_game.py
    ```
 How to Play
 
 Use the arrow keys to move the snake.
 Eat the green food blocks to grow the snake and increase your score.
 Avoid colliding with the walls or the snake's own body.
-
-Code Overview
-
-snake_game.py: The main game file containing all the logic for the Snake Game.
 
 Code Overview
 

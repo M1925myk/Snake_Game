@@ -26,7 +26,7 @@ def display_score(score):
     screen.blit(value, [0, 0])
 
 
-def display_snake(snake_block, snake_body):
+def display_snake(snake_body, snake_block):
     for index, x in enumerate(snake_body):
         color = 'yellow' if index % 2 == 0 else 'green'
         pygame.draw.rect(screen, color, [x[0], x[1], snake_block, snake_block])
@@ -51,7 +51,7 @@ def run_game_loop():
     snake_body = []
     length_of_snake = 1
 
-    foodx = random.randint(5,780)
+    foodx = random.randint(5, 780)
     foody = random.randint(5, 580)
 
     while not game_over:

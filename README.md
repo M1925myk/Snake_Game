@@ -12,9 +12,7 @@
    pip install pygame 
    ```
 
-3. Clone this repository:
-
-- Go to the `< > Code` and copy the clone that you need.
+3. Clone the repository and go to the project's root directory 
 
 4. Navigate to the project directory:
    ```bash

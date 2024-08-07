@@ -9,18 +9,10 @@ screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Snake Game')
 
-# color
-
-white = (255, 255, 255)
-yellow = (255, 255, 102)
-black = (0, 0, 0)
-red = (213, 50, 80)
-green = (0, 255, 0)
-blue = (50, 153, 213)
-
 # Snake settings
 snake_block = 10
 snake_speed = 15
+snake_main = 15
 
 clock = pygame.time.Clock()
 
@@ -31,12 +23,14 @@ score_font = pygame.font.SysFont("comicsansms", 35)
 
 def display_score(score):
     value = score_font.render("Your Score: " + str(score), True, 'black')
+
     screen.blit(value, [0, 0])
 
 
 def display_snake(snake_block, snake_body):
-    for x in snake_body:
-        pygame.draw.rect(screen, 'yellow', [x[0], x[1], snake_block, snake_block])
+    for index, x in enumerate(snake_body):
+        color = 'yellow' if index % 2 == 0 else 'green'
+        pygame.draw.rect(screen, color, [x[0], x[1], snake_block, snake_block])
 
 
 def display_message(msg, color, pos):
@@ -56,7 +50,7 @@ def run_game_loop():
     s_y_change = 0
 
     snake_body = []
-    length_of_snake= 1
+    length_of_snake = 1
 
     foodx = random.randrange(0, screen_width - snake_block)
     foody = random.randrange(0, screen_height - snake_block)
@@ -102,6 +96,7 @@ def run_game_loop():
         pygame.draw.rect(screen, 'red', [foodx, foody, snake_block, snake_block])
         snake_head = [s_x, s_y]
         snake_body.append(snake_head)
+
         if len(snake_body) > length_of_snake:
             del snake_body[0]
 

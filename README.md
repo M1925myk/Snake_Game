@@ -1,7 +1,7 @@
 
 ## A classic Snake Game implemented in Python using the Pygame library. This game includes features like scoring, a main menu, and game over states.
 
-## The code will work if you have Python 3 or higher installed
+## The code will work if you have Python 3.8 or higher installed
 
 ## Installation
 
@@ -14,12 +14,7 @@
 
 3. Clone the repository and go to the project's root directory 
 
-4. Navigate to the project directory:
-   ```bash
-   cd snake_game
-   ```
-
-5. Run the game:
+4. Run the game:
    ```bash
    python snake_game.py
    ```
